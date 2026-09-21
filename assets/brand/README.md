@@ -46,6 +46,33 @@ on white: it measures 3.87:1, large-text-only. It is fine on ink (4.88:1).
 on white and **fails** AA for normal text. `#df0e62` replaces it — it is
 also the incumbent `--color-primary` on the live save7.org Astro site.
 
+### The PNGs above do not match this palette
+
+Measured off the pixels (2026-09-21, ticket #28), not assumed:
+
+| File | Colours in the file |
+|---|---|
+| `Save7-V7-mark.png` | `#ED0E6A` |
+| `Save7-V7-with-type.png` | `#ED0E6A` |
+| `Save7-V7-with-url.png` | `#ED0E6A` |
+| `Save7-logo-horizontal.png` | `#ED186B` + `#00B9B5` |
+
+Every lockup is frozen at the **superseded** pink, and the horizontal
+logo's teal is neither resolved teal. **No CSS reaches these pixels** —
+they are raster, not SVG — so any surface that puts a lockup next to
+live `#df0e62` type carries two pinks, ΔE76 = 4.8 apart. That is past
+the ~2.3 just-noticeable threshold, so at close proximity it reads as a
+printing error rather than a palette.
+
+This also means **text baked into a lockup cannot be recoloured for
+contrast.** The small "WWW.SAVE7.ORG" in `Save7-V7-with-type.png` is
+120px of a 1570px-tall image; it fails AA at body size under either pink
+(3.94:1 new, 4.38:1 old) and the only fixes are to render the lockup
+large enough to qualify as AA-Large, or to derive a new asset.
+
+The Certificate (#28) takes the first route and accepts the divergence.
+Nothing has yet decided this for the rest of the site.
+
 ## Typography
 
 Two typefaces, no exceptions (both on Google Fonts):

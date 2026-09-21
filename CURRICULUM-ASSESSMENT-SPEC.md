@@ -342,32 +342,56 @@ signatory).
 **Layout — bold poster, split panel:**
 
 - **Left panel:** ink (`#111111`) background, holding the full
-  "Save7-V7-with-type" lockup (pink V7 mark + white "SAVE7" + pink
-  "WWW.SAVE7.ORG") and a large low-opacity V7-mark watermark
+  "Save7-V7-with-type" lockup **used unmodified, at 200px wide**, and a
+  large low-opacity V7-mark watermark. Body copy on this panel is white.
 - **Right panel:** white background —
-  - "CERTIFICATE OF COMPLETION" eyebrow
+  - "CERTIFICATE OF COMPLETION" eyebrow, `pink` (4.80:1)
   - large ink learner name (Anton)
-  - pink Level-name pill (Beginner / Intermediate / Advanced)
+  - `pink` Level-name pill (Beginner / Intermediate / Advanced), white
+    Anton text (4.80:1)
   - footer row: "Issued by / Save7" (left) and date (right) — org-only,
     no individual signatory
 
-> **Superseded tokens — re-cut pending (ticket #25).** This layout was
-> designed against the old `#ED0E69` + Anton/Inter set. It is being
-> re-cut to Lexend + Anton + `#df0e62`. The small pink "WWW.SAVE7.ORG"
-> on the ink panel fails AA at body size under either pink (3.94:1 new,
-> 4.38:1 old) and becomes white; pink is retained for the V7 mark, which
-> is large.
+Body/UI type is **Lexend**; **Anton** stays display-only (learner name,
+Level pill).
+
+**Two pinks, accepted (ticket #28, 2026-09-21).** The brand raster
+assets are frozen at the superseded pink — every PNG in `assets/brand/`
+measures `#ED0E6A`, and `Save7-logo-horizontal.png` is `#ED186B` +
+`#00B9B5`. No CSS reaches those pixels. So the Certificate carries
+`#ED0E6A` in the lockup and `#df0e62` in live type, ΔE76 = 4.8 apart.
+This is **knowingly accepted** rather than resolved: the two never share
+a panel, and the alternative — a derived lockup — is a brand act, not a
+styling change. See the wider question in Open Items.
+
+**"WWW.SAVE7.ORG" is solved by scale, not colour.** It is not live text:
+it is pink pixels baked into the lockup PNG, 120px of a 1570px-tall
+image, so it cannot "become white" without deriving a new asset.
+Rendering the lockup at **200px** instead of 150px lifts its cap height
+from ~12px to ~16px (≈22px bold equivalent), clearing the 18.66px-bold
+AA-Large threshold at 4.38:1. The 200px width is therefore **load-bearing
+for accessibility**, not a visual preference — do not shrink it.
+
+**Level pill — checked, no change needed.** White on `#df0e62` is 4.80:1,
+clearing AA for normal text outright and AA-Large with room at 20px
+Anton. The pill *fill* against the white panel is also 4.80:1, well past
+the 3:1 that WCAG 1.4.11 asks of a graphical object.
 
 **Per-Level variation:** only the Level-name text changes — no
 per-Level colour-coding, since the brand kit's palette is deliberately
 restrained to one hero colour (pink) plus teal reserved for dark
 surfaces.
 
-**Prototype:** full 3-variant HTML mockup (including two non-winning
-directions) on
-[`prototype/certificate-layout`](https://github.com/zzubyr7x/Learn.save7.org/blob/prototype/certificate-layout/wayfinder/prototypes/certificate-prototype.html)
-(branch, not merged to `main` — this spec doesn't ship the actual
-Certificate template/code, which is downstream build work).
+**Prototypes:** both on the `prototype/certificate-layout` branch, not
+merged to `main` — this spec doesn't ship the actual Certificate
+template/code, which is downstream build work.
+
+- [`certificate-prototype.html`](https://github.com/zzubyr7x/Learn.save7.org/blob/prototype/certificate-layout/wayfinder/prototypes/certificate-prototype.html)
+  — the original 3-layout mockup that settled the split panel (#10).
+- [`certificate-recut-prototype.html`](https://github.com/zzubyr7x/Learn.save7.org/blob/prototype/certificate-layout/wayfinder/prototypes/certificate-recut-prototype.html)
+  — the token re-cut (#28), carrying a live contrast readout and the two
+  rejected answers to the frozen-raster problem (a derived white lockup,
+  and a derived teal one).
 
 ### Brand Assets
 
@@ -402,6 +426,16 @@ reset in [`assets/brand/README.md`](assets/brand/README.md).
 Carried forward for whoever picks this up next — none of these block the
 handoff, but they're real gaps worth tracking:
 
+- **The brand rasters are frozen at the superseded pink, site-wide.**
+  Surfaced by the Certificate re-cut (#28), which accepted the resulting
+  divergence *locally*. The wider question is untouched: every logo PNG
+  is `#ED0E6A`, and `Save7-logo-horizontal.png` — the natural site-header
+  lockup — is `#ED186B` + `#00B9B5`, a teal that is not either resolved
+  teal. A header logo sitting beside a `#df0e62` CTA collides at much
+  closer proximity than the Certificate's two panels do. Whether Learn
+  ships derived assets, accepts the divergence everywhere, or the brand
+  kit is re-issued at the resolved tokens is undecided, and the third
+  option is a Save7-wide brand act, not a Learn decision.
 - **Multi-language / translation strategy.** South Africa has 11 official
   languages; this spec is English-only.
 - **A future build/implementation map** for actually constructing
