@@ -4,7 +4,7 @@ Ticket: [T03-advanced-research.md](../tickets/T03-advanced-research.md) · Map: 
 
 Feeds T06 (Advanced Level finalize — module list + Stage breakdown).
 
-All page references are to the PDFs in the Source Corpus (`/Users/zubayrparak/Desktop/Save7 Course/resources/`), read directly (text-extracted via `pdftotext`, cross-checked against the PDF page numbers reported by `pypdf`). Where a source document has its own internal page numbering (e.g. an appendix reprinted inside the compiled Course Manual), both are given.
+All page references are to the PDFs in the Source Corpus (`/Users/zubayrparak/Desktop/resources/`), read directly (text-extracted via `pdftotext`, cross-checked against the PDF page numbers reported by `pypdf`). Where a source document has its own internal page numbering (e.g. an appendix reprinted inside the compiled Course Manual), both are given.
 
 ---
 

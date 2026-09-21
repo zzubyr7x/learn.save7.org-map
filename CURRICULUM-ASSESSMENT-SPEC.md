@@ -431,7 +431,7 @@ handoff, but they're real gaps worth tracking:
 
 Reference material grounding this spec, prioritizing South
 African-specific guidance:
-`/Users/zubayrparak/Desktop/Save7 Course/resources/` (10 PDFs + 1 video
+`/Users/zubayrparak/Desktop/resources/` (10 PDFs + 1 video
 as of 2026-09-03, local to the user's machine, not in this repo). Full
 per-Level source mapping and citations: [T01 — Beginner](wayfinder/research/T01-beginner-findings.md),
 [T02 — Intermediate](wayfinder/research/T02-intermediate-findings.md),
