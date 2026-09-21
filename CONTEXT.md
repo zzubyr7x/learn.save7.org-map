@@ -1,6 +1,6 @@
 # Context: learn.save7.org Course Spec
 
-Glossary for the wayfinder map planning a curriculum + assessment spec for Save7's organ donation education platform, learn.save7.org. Spec-only effort: output hands off to a separate build.
+Glossary for the wayfinder map behind Save7's organ donation education platform, learn.save7.org. The spec is complete; the map now carries the build as well, so terms here cover the curriculum, assessment, accounts and dashboards alike.
 
 ## Terms
 
@@ -29,7 +29,10 @@ A single fixed-form MCQ test, cross-Level in scope (samples Beginner + Intermedi
 One instance of a learner taking the Baseline Assessment. Every learner has 4 sittings on a fixed schedule: initial (at signup, before any Level) → after completing Beginner Level → after completing Intermediate Level → after completing Advanced Level.
 
 **Certificate**
-A per-Level completion artifact: learner's name + Save7 branding, downloadable, issued on completing each Level (so a learner who finishes all three Levels holds three Certificates, not one).
+A per-Level completion artifact: learner's name + Save7 branding, downloadable, issued on completing each Level (so a learner who finishes all three Levels holds three Certificates, not one). Not a stored file but a view rendered on demand: the Student's name and award title are fixed at issuance, so a later rename cannot rewrite a Certificate already shown to an employer, while the artwork is always the current design — a re-download years later may therefore look different from the original, deliberately.
+
+**Certificate Verification**
+The check anyone holding a Certificate's public ID can perform without an account: it confirms the name on it, which Level it is for, the issue date, and whether it is still valid — and nothing else, never the Student's email, Baseline scores, or answers. Deliberately open, because a Certificate nobody else can check is worth much less; disclosed to Students as a recipient category when they sign up.
 
 **Curriculum Spec**
 The destination of this map: module list + learning objectives + source-to-content mapping per Level/Stage, plus the Assessment Blueprint. Does not include fully drafted lesson content or the actual Baseline question bank — those are downstream, ticketed separately.
