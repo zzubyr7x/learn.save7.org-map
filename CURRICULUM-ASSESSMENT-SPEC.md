@@ -351,6 +351,13 @@ signatory).
   - footer row: "Issued by / Save7" (left) and date (right) — org-only,
     no individual signatory
 
+> **Superseded tokens — re-cut pending (ticket #25).** This layout was
+> designed against the old `#ED0E69` + Anton/Inter set. It is being
+> re-cut to Lexend + Anton + `#df0e62`. The small pink "WWW.SAVE7.ORG"
+> on the ink panel fails AA at body size under either pink (3.94:1 new,
+> 4.38:1 old) and becomes white; pink is retained for the V7 mark, which
+> is large.
+
 **Per-Level variation:** only the Level-name text changes — no
 per-Level colour-coding, since the brand kit's palette is deliberately
 restrained to one hero colour (pink) plus teal reserved for dark
@@ -367,16 +374,26 @@ Certificate template/code, which is downstream build work).
 Source of truth: https://save7.org/brand-kit#files. Versioned copy in
 this repo at [`assets/brand/`](assets/brand/README.md).
 
-| Name | Hex | Use |
+| Token | Hex | Use |
 |---|---|---|
-| Save7 Pink | `#ED0E69` | Hero colour, used with restraint on white and ink |
-| Save7 Teal | `#16B9B4` | Accent — legible on ink, not on white; dark surfaces or as a fill behind ink text only |
-| White | `#FFFFFF` | Default background |
-| Ink | `#111111` | Text & dark surfaces |
+| `pink` | `#df0e62` | Hero colour. 4.80:1 on white — clears WCAG AA for normal text. Large text only on ink (3.94:1). |
+| `teal-on-ink` | `#16B9B4` | True brand teal. 7.76:1 on ink (AAA). Never on white (2.43:1). |
+| `teal-on-white` | `#00807B` | Teal for white surfaces. 4.80:1 — AA for normal text. |
+| `white` | `#FFFFFF` | Default background |
+| `ink` | `#111111` | Text & dark surfaces |
 
-Typography: **Anton** (display only — headlines/numbers, all-caps, no
-body copy) + **Inter** (everything else, weights 400–800). Both on
-Google Fonts, no exceptions.
+Typography: **Lexend** (body, UI, captions — `--font-sans`, matching the
+live save7.org site) + **Anton** (display only — headlines/numbers,
+all-caps, no body copy). Both on Google Fonts, no exceptions.
+
+**Revised 2026-09-21 (ticket #21).** These supersede the `#ED0E69` +
+Anton/Inter set this spec originally carried. `#ED0E69` measures 4.31:1
+on white and fails AA for normal text; `#df0e62` clears it at 4.80:1 and
+is the incumbent `--color-primary` on the live save7.org Astro site.
+Inter is dropped in favour of Lexend for the same consistency reason. Two
+teals are required because no single colour can clear AA for normal text
+on both white and `#111111`. Full reasoning and the Tailwind `@theme`
+reset in [`assets/brand/README.md`](assets/brand/README.md).
 
 ---
 
