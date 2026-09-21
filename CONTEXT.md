@@ -20,7 +20,7 @@ One of the three depth-based tiers of the Course: Beginner, Intermediate, Advanc
 A module/unit within a Level. A Level is composed of one or more Stages.
 
 **Source Corpus**
-The reference material set grounding course content: the files in `Desktop/Save7 Course/resources/` (10 PDFs + 1 video as of 2026-09-03), prioritizing South African–specific guidance. May grow; new sources get folded in without changing this definition.
+The reference material set grounding course content: the files in `Desktop/resources/` (10 PDFs + 1 video as of 2026-09-03), prioritizing South African–specific guidance. May grow; new sources get folded in without changing this definition.
 
 **Baseline Assessment**
 A single fixed-form MCQ test, cross-Level in scope (samples Beginner + Intermediate + Advanced content at reasonable/moderate difficulty), reused verbatim (not randomized) across all sittings so results are comparable over time. Purely diagnostic — no pass/fail; its value is the before/after comparison across sittings, not gating anything.
