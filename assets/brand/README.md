@@ -48,30 +48,83 @@ also the incumbent `--color-primary` on the live save7.org Astro site.
 
 ### The PNGs above do not match this palette
 
-Measured off the pixels (2026-09-21, ticket #28), not assumed:
+Measured off the pixels (2026-09-21, tickets #28 and #39), not assumed:
 
 | File | Colours in the file |
 |---|---|
 | `Save7-V7-mark.png` | `#ED0E6A` |
-| `Save7-V7-with-type.png` | `#ED0E6A` |
+| `Save7-V7-with-type.png` | `#ED0E6A` + white |
 | `Save7-V7-with-url.png` | `#ED0E6A` |
 | `Save7-logo-horizontal.png` | `#ED186B` + `#00B9B5` |
+| `Save7-logo-stacked.png` | `#ED186B` + `#00B9B5` |
+| `Save7-social-overlay.png` | `#ED0E69` + `#ED186B` + white |
 
-Every lockup is frozen at the **superseded** pink, and the horizontal
-logo's teal is neither resolved teal. **No CSS reaches these pixels** —
-they are raster, not SVG — so any surface that puts a lockup next to
-live `#df0e62` type carries two pinks, ΔE76 = 4.8 apart. That is past
-the ~2.3 just-noticeable threshold, so at close proximity it reads as a
-printing error rather than a palette.
+> **Re-measured 2026-09-21 (#39), all six files.** The earlier table here
+> covered only four: `Save7-logo-stacked.png` and `Save7-social-overlay.png`
+> were never measured. The kit does not hold *one* superseded pink — it holds
+> **three**, and the social overlay carries two of them inside a single file.
 
-This also means **text baked into a lockup cannot be recoloured for
-contrast.** The small "WWW.SAVE7.ORG" in `Save7-V7-with-type.png` is
-120px of a 1570px-tall image; it fails AA at body size under either pink
-(3.94:1 new, 4.38:1 old) and the only fixes are to render the lockup
-large enough to qualify as AA-Large, or to derive a new asset.
+### The pink census
 
-The Certificate (#28) takes the first route and accepts the divergence.
-Nothing has yet decided this for the rest of the site.
+Five distinct colours occupy the "hero pink" role across the Save7 estate:
+
+| Hex | Where | ΔE76 vs `#df0e62` |
+|---|---|---|
+| `#df0e62` | **resolved token** — live save7.org `--color-primary` | — |
+| `#ED0E6A` | `V7-mark`, `V7-with-type`, `V7-with-url` rasters | 4.80 |
+| `#ED186B` | `logo-horizontal`, `logo-stacked` rasters | 4.34 |
+| `#ED0E69` | brand-kit page `--pink` token; `social-overlay` | 4.73 |
+| `#EC0F68` | save7.org's own `favicon.svg` plate | 4.34 |
+
+All four superseded values sit well past the ~2.3 ΔE just-noticeable
+threshold from the resolved token, so at close proximity any of them reads
+as a printing error rather than a palette.
+
+**The teal is a non-issue.** `#00B9B5` vs `teal-on-ink #16B9B4` is
+**ΔE76 = 0.9** — below the JND. The lockups' teal *is* `teal-on-ink`,
+perceptually; only the pink mismatch is visible.
+
+### A true vector mark exists
+
+Recorded here because #24 and #28 both reasoned from "the logo exists only
+as PNG." That is true of this kit, and **false of Save7**: the live
+save7.org header renders an inline SVG V7 mark, two paths,
+`fill="currentColor"`, computing to `#df0e62`. Its favicon is a 548-byte
+true vector. The homepage uses **zero** raster lockups and exactly one
+pink in the whole document.
+
+Verified against `Save7-V7-mark.png`: **IoU 0.9754**, 1.49% pixel
+disagreement — the same mark, in vector form.
+
+Both vectors are now versioned here:
+
+- `Save7-V7-mark.svg` (532 B) — `currentColor`, tints to any token, scales
+  from a 16px header to a certificate.
+- `Save7-favicon.svg` (634 B) — white mark on a `#df0e62` rounded plate.
+  Follows save7.org's own favicon pattern with the plate corrected from
+  `#EC0F68` (white 4.34:1) to the resolved token (white 4.80:1).
+
+### What this means for baked-in text
+
+**Text baked into a lockup cannot be recoloured for contrast.** The small
+"WWW.SAVE7.ORG" in `Save7-V7-with-type.png` is 120px of a 1570px-tall
+image; it fails AA at body size under either pink (3.94:1 new, 4.38:1 old).
+The fixes are to render the lockup large enough to qualify as AA-Large, or
+to stop using a raster. Note `Save7-logo-horizontal.png` is a **pure
+wordmark** — "SAVE" teal, "SEVEN" pink, no URL text — so it does not carry
+this problem, and wordmark text is exempt from WCAG 1.4.3 under the
+logotype exception regardless.
+
+### Learn's rule (#39)
+
+**Learn does not ship the raster lockups in its chrome.** Header, footer
+and auth panels use `Save7-V7-mark.svg` tinted to the resolved tokens plus
+live Lexend text; the favicon is `Save7-favicon.svg`; the Certificate is
+re-cut to the vector mark plus a live Lexend wordmark. This is convergence
+on what save7.org already does in production, not a fork of it — shipping
+the frozen raster is what would make Learn diverge from the parent site.
+
+The rasters stay in this directory as the kit of record, unmodified.
 
 ## Typography
 
