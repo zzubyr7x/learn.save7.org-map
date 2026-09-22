@@ -2,7 +2,7 @@
 ticket: T06
 title: "Findings: cite-or-cut audit of the 20 clinical gate questions"
 status: research complete
-date: 2026-09-21
+date: 2026-09-22
 issue: 34
 ---
 
@@ -16,6 +16,12 @@ they already carry. Feeds the Save7 sign-off that
 **No review item was cleared and no question was edited.** `transplant-alchemy/HANDOVER.md` §7
 forbids clearing a content-review item in code; this pass only establishes what each question
 is actually worth, so Save7 can sign off or cut with the evidence in front of them.
+
+**Update, 2026-09-22:** the five questions the first pass left open (`c10`, `c11`, `c14`, `c15`,
+`c16`) have now been read against their own named primary sources — ISHLT/Mehra 2016, AHA/Canter
+2007, NEJM/Mazzaferro 1996, Am J Transplant/Merion 2005, and KDIGO 2020 — plus South African
+practitioner sources for the two SA-relevance questions (`c14`, `c16`). See the updated buckets
+D–F below and the summary table. All twenty questions now carry a resolved recommendation.
 
 ## Headline: the premise was wrong
 
@@ -121,50 +127,126 @@ Two small precision gaps worth fixing while the citation is attached:
   including 55 years**. A previous reviewer softened this away from a figure the corpus actually
   supports. Recommend restoring the range and citing the Red File.
 
-### D. Primary source named but not held — needs a direct read before sign-off (3)
+### D. Primary source now read — sign off with citation (2)
 
-- **`c11`** (paediatric: hypoplastic left heart, severe Ebstein, restrictive cardiomyopathy) —
-  Canter *et al.* 2007 is named in the study guide's references and is the right authority.
-  Not in the corpus. Obtain and check, or cut.
-- **`c16`** (renal transplant for CKD 5 / ESRD) — stated in the study guide; clinically
-  uncontroversial, but currently rests on a tertiary source. Cheap to ground in KDIGO or an SA
-  nephrology guideline.
-- **`c10`** — see below; it needs the read *and* a rewrite.
+The five items formerly left open (issue #34's reopening comment, 2026-09-21T20:06:55Z) have now
+been resolved against the actual primary sources rather than the study guide's tertiary echo of
+them. Two clear the bar outright:
 
-### E. No supporting source anywhere in the corpus (2)
+- **`c15` — Milan criteria.** Primary source: Mazzaferro V, Regalia E, Doci R, *et al.* "Liver
+  Transplantation for the Treatment of Small Hepatocellular Carcinomas in Patients with
+  Cirrhosis." *N Engl J Med.* 1996;334(11):693–700 (full text read at nejm.org; **note the page
+  range correction** — it is 693–**700**, not 693–699 as bucket E previously had it). The
+  methods section states the eligibility criteria verbatim: *"the tumor could not exceed 5 cm in
+  diameter"* for a single HCC, and for multiple tumors *"there could be no more than three
+  tumors, none exceeding 3 cm in diameter."* Exclusion: *"Patients in whom tumor invasion of
+  blood vessels or lymph nodes was evident or suspected preoperatively were excluded."*
+  The course's stated criteria (single ≤5 cm, or up to three each ≤3 cm, no macrovascular
+  invasion) are **accurate as far as they go**, but the source excludes on **nodal** invasion
+  too, not just macrovascular — a precision gap worth fixing while the citation is attached, in
+  the same vein as `c9`/`c17` in bucket B. **Verdict: cite Mazzaferro 1996 (693–700), add the
+  nodal-exclusion clause, sign off.**
 
-- **`c14` — MELD ≥15.** Zero occurrences of "MELD" in the entire corpus. Traces only to AMBOSS.
-  Genuine primary sources exist (Merion *et al.*, *Am J Transplant* 2005, on survival benefit
-  above MELD 15; the OPTN "Share 15" allocation policy) but **neither has been read here**.
-  Additional concern for an SA course: MELD ≥15 is a **US allocation** threshold. South Africa
-  does not run UNOS-style MELD-based allocation, so even correctly cited this may warrant a
-  **Source Note** under [#6](https://github.com/zzubyr7x/Learn.save7.org/issues/6)'s convention,
-  or be the wrong question for this audience.
-- **`c15` — Milan criteria** (one lesion ≤5 cm, or up to three each ≤3 cm, no macrovascular
-  invasion). No corpus support. The primary source is Mazzaferro *et al.*, *NEJM*
-  1996;334:693–699 — **not read here**. The criteria are stated accurately as far as I can tell,
-  but that is not the same as verified, which is the whole point of the standard.
+- **`c16` — kidney transplant candidacy (CKD5/ESRD).** Primary source: Chadban SJ, Ahn C,
+  Axelrod DA, *et al.* "KDIGO Clinical Practice Guideline on the Evaluation and Management of
+  Candidates for Kidney Transplantation." *Transplantation.* 2020;104(4S1):S11–S103 (full text
+  read at journals.lww.com). Recommendation 1.1: candidates with **CKD G4–G5 (GFR <30
+  mL/min/1.73 m²)** expected to progress to ESKD should be "informed of, educated about, and
+  considered for" transplantation — i.e., the guideline's real referral trigger is CKD **4–5**,
+  not CKD5/ESRD alone. Rec 1.1.1 says refer 6–12 months *before* anticipated dialysis; Rec 1.4.1
+  goes further and **recommends pre-emptive transplantation** (before dialysis) once eGFR <10
+  mL/min/1.73 m² in adults, "or earlier with symptoms." So the actual guideline is broader and
+  earlier than "CKD5/ESRD" implies — it explicitly prefers transplanting *before* a patient
+  reaches dialysis-dependent ESRD, not after. **South Africa check**: the SA Renal Society's
+  public guideline list (sa-renalsociety.org/guidelines/) has guidelines for chronic dialysis
+  care, paediatric dialysis, AKI, and renal palliative care, plus the Declaration of Istanbul on
+  organ trafficking — **no SA-specific transplant-candidacy guideline was found**. KDIGO states
+  it is "intended to assist health care professionals worldwide," and nothing found contradicts
+  it for SA. **Verdict: cite KDIGO 2020 (Rec 1.1/1.1.1/1.4.1), sign off** — no Source Note
+  needed (no SA divergence surfaced) — but consider tightening "CKD5/ESRD" toward KDIGO's actual
+  GFR-staged referral/pre-emptive-listing language if a precision fix is wanted.
 
-### F. Substantive accuracy problem, not merely a citation gap (1) ⚠️
+### E. Primary source now read — needs a Source Note, not a cut (1)
 
-**`c10` — peak VO2. Recommend cut or rewrite, not sign-off.**
+- **`c14` — MELD ≥15.** Primary source: Merion RM, Schaubel DE, Dykstra DM, Freeman RB, Port FK,
+  Wolfe RA. "The Survival Benefit of Liver Transplantation." *Am J Transplant.* 2005;5(2):307–
+  313 (confirmed via publisher abstract/results at onlinelibrary.wiley.com and amjtransplant.org
+  — full text paywalled, results confirmed from the published abstract only). Finding: mortality
+  in candidates with MELD <15 was *higher* after transplant than for comparable candidates left
+  on the waiting list — i.e., transplant is net-harmful below MELD 15. This is the evidence base
+  the OPTN used to adopt the **"Share 15" policy in 2005**: MELD/PELD ≥15 candidates get offered
+  livers regionally before lower-scored local candidates. That policy is a US **geographic
+  organ-sharing administrative rule** (built on OPTN's multi-region donation-service-area
+  structure), not a universal clinical indication threshold — this is confirmed from the OPTN's
+  own liver-allocation timeline and secondary summaries of the policy's adoption.
+  **South Africa check — this reverses the earlier assumption.** Two SA practitioner-level
+  primary sources confirm South Africa *does* run MELD-based liver allocation: Dempster M,
+  Bouter C, Maher H, *et al.* "Adult liver transplant for hepatocellular carcinoma at Wits
+  Donald Gordon Medical Centre in Johannesburg, South Africa." *South African Journal of
+  Surgery.* 2019;57(3):Article 3067 — *"all eligible patients are on the same waiting list
+  irrespective of payer status and deceased donor organs are allocated on a 'sickest first'
+  basis according to the MELD score"* (the article also notes a MELD exception score of 22
+  points applied at listing for HCC candidates, mirroring US MELD-exception practice); and
+  Loveland J (Head of Transplant Surgery, Wits Donald Gordon Medical Centre; Academic Head of
+  Transplantation, University of the Witwatersrand), "From split livers to machine perfusion:
+  the 20-year evolution of liver transplants in South Africa," *The Conversation*, 2026 —
+  confirms a single combined public/private national-ish waiting list, sickest-first. So **MELD
+  itself is not foreign to this audience** — the earlier open-bucket framing that "SA doesn't run
+  MELD-based allocation" does not hold up against SA sources. What was *not* found in any SA
+  source is the specific **≥15 regional-sharing cutoff** — SA's single combined list doesn't
+  appear to have the US's multi-region geography that "Share 15" exists to solve, so that exact
+  numeric threshold is still US-policy-specific even though MELD as a concept is SA practice.
+  **Verdict: cite Merion 2005 for the survival-benefit finding, and attach a Source Note per
+  CONTEXT.md's convention flagging the specific "≥15" figure as drawn from the US OPTN "Share 15"
+  allocation policy rather than a clinical threshold or confirmed SA rule** — sign off with that
+  note, not a cut, since MELD itself is demonstrably SA-relevant.
 
-The keyed answer is *"Peak VO2 <10–12 mL/kg/min (or <50% of predicted value)"*.
+### F. Primary source now read — confirmed accuracy defect, cut or rewrite (2) ⚠️
 
-- Mancini & Lietz 2010, **in the corpus**, states the listing cutoff was *"lowered from a peak
-  V̇O2 ≤14 to ≤12 mL·kg⁻¹·min⁻¹"* — a **single** threshold, not a 10–12 band. Its indications
-  table lists *"peak V̇O2 ≤12"*.
-- The lower bound of **10** appears in no source I can find, in the corpus or in the study
-  guide's reference list.
-- The clinically decisive detail is **missing entirely**: which number applies depends on
-  beta-blocker tolerance (ISHLT 2016 uses ≤14 off beta-blockers, ≤12 on them). A question that
-  keys a bare number without that conditional teaches the wrong thing even if a number in the
-  range is defensible.
-- `<50% of predicted` does appear in the literature for younger patients and women, but
-  Mancini & Lietz mention percent-predicted VO2 only as *a parameter that has been examined*,
-  citing Aaronson & Mancini 1995 — not as a listing threshold.
+- **`c10` — peak VO2 (adult heart transplant).** Primary source: Mehra MR, Canter CE, Hannan MM,
+  *et al.* "The 2016 International Society for Heart Lung Transplantation listing criteria for
+  heart transplantation: A 10-year update." *J Heart Lung Transplant.* 2016;35(1):1–23
+  (confirmed via the publisher's guideline text and corroborating secondary summaries; full PDF
+  behind a 403). The actual criteria are **not** a 10–12 band: *"In the presence of a β-blocker,
+  a cutoff for peak VO2 of ≤12 mL/kg/min should be used to guide listing"* (Class I); *"in
+  patients intolerant of a β-blocker, a cutoff for peak oxygen consumption of ≤14 mL/kg/min
+  should be used to guide listing"* (Class I). A third element exists that the keyed answer
+  garbles: *"the percentage of predicted (≤50%) peak VO2 should be used **in conjunction with**
+  [not instead of] peak VO2 for young (<50 years) and female patients"* — i.e., it supplements
+  the raw cutoff for a specific subgroup, it is not a general "or" alternative for everyone. This
+  confirms and sharpens what bucket F previously found via the secondary Mancini & Lietz 2010
+  echo: the keyed answer *"Peak VO2 <10–12 mL/kg/min (or <50% of predicted value)"* is wrong on
+  three counts — no 10 mL/kg/min lower bound exists in the source; the beta-blocker conditional
+  (≤14 off / ≤12 on) that determines which number applies is missing entirely; and the
+  50%-predicted clause is mis-stated as a blanket alternative when it is restricted to
+  young/female patients and used alongside, not in place of, the raw cutoff. **Verdict: cut or
+  rewrite, not sign-off** — confirmed against the primary source, not just its secondary echo.
 
-This is the one item where the problem is the content, not the paperwork.
+- **`c11` — paediatric heart transplant indications.** Primary source: Canter CE, Shaddy RE,
+  Bernstein D, *et al.* "Indications for Heart Transplantation in Pediatric Heart Disease: A
+  Scientific Statement From the American Heart Association..." *Circulation.* 2007;115(5):658–
+  676 (full text read at ahajournals.org). The keyed answer names three diagnoses — hypoplastic
+  left heart syndrome, severe Ebstein's anomaly, restrictive cardiomyopathy — and none of the
+  three survives an unqualified reading:
+  - **Restrictive cardiomyopathy** is a genuine Class I indication, but only *"associated with
+    reactive pulmonary hypertension"* (Level of Evidence C) — the course drops that qualifier,
+    implying RCM alone is sufficient.
+  - **Hypoplastic left heart syndrome** is not named as a Class I or IIA indication anywhere in
+    the recommendations. The statement's own narrative says the opposite of what the course
+    implies: *"these phenomena have led to a **decreased** use of heart transplantation as
+    primary therapy for hypoplastic left heart syndrome"* as staged Norwood palliation outcomes
+    improved. The closest formal recommendation (Class IIA) covers infants with a **functional
+    single ventricle** generally — not HLHS by name — and only when combined with specific
+    anatomic red flags (severe coronary artery stenosis/atresia, moderate-to-severe AV or
+    semilunar valve disease, or severe ventricular dysfunction). Presenting bare HLHS as *the*
+    indication overstates a conditional, narrowing recommendation.
+  - **"Severe Ebstein's anomaly"** does not appear anywhere in this statement — a full-text
+    search of the article returns zero matches for "Ebstein." This appears to be invented or
+    imported from elsewhere, not something this source supports at all.
+  One diagnosis is accurate-but-incomplete, one is a significant overstatement of a declining,
+  conditional recommendation, and one is unsupported by the named source at all. **Verdict: cut
+  or rewrite, not sign-off** — this is the same class of problem as `c10`: a substantive content
+  defect, not a missing citation.
 
 ---
 
@@ -175,13 +257,15 @@ This is the one item where the problem is the content, not the paperwork.
 | A — already cited | c1–c5, c18, c19, c20 | 8 | Sign off as-is |
 | B — corpus-backed, attach citation | c7, c9, c12, c13, c17 | 5 | Attach source, fix 2 precision gaps, sign off |
 | C — corpus-backed, answer too weak | c6, c8 | 2 | Restore the SA figures, cite Red File, sign off |
-| D — source named, not yet read | c11, c16 | 2 | Obtain and read, then sign off or cut |
-| E — no corpus support | c14, c15 | 2 | Read Mazzaferro / Merion, or cut. c14 also has an SA-relevance problem |
-| F — accuracy defect | c10 | 1 | **Cut or rewrite** |
+| D — primary source read, sign off | c15, c16 | 2 | Attach Mazzaferro 1996 / KDIGO 2020, fix 1 precision gap, sign off |
+| E — primary source read, needs Source Note | c14 | 1 | Attach Merion 2005, add Source Note on the US-specific "≥15" figure, sign off |
+| F — primary source read, accuracy defect | c10, c11 | 2 | **Cut or rewrite** |
 
-**Fifteen of twenty are already defensible or become so by attaching a source that is already
-in hand.** The genuinely open set is five: `c11`, `c14`, `c15`, `c16` need a document read, and
-`c10` needs cutting or rewriting.
+**All twenty are now resolved to a recommendation.** Eighteen of twenty are defensible as-is or
+become so by attaching a citation (with three firm precision-wording fixes — `c9`, `c17` in
+bucket B, `c15` in bucket D — one optional tightening on `c16`, and one Source Note on `c14`).
+Two — `c10` and `c11` — are confirmed content defects against their own named primary sources
+and should be cut or rewritten, not signed off.
 
 ## Carried forward
 
