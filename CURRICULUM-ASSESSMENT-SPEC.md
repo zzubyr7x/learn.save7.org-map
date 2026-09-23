@@ -448,8 +448,11 @@ handoff, but they're real gaps worth tracking:
   as a separate effort.
 - **SA faith/cultural-specific myth breakdown** for Beginner Level's
   Stage 2, myth #5 (currently kept generic).
-- **Tissue Bank FAQ direct review** — not yet independently checked
-  against the Beginner myths list.
+- ~~**Tissue Bank FAQ direct review**~~ — ✅ **Closed 2026-09-23 (#47).**
+  Fetched in full: it does not carry myth #10's three points. They rest on
+  the ODF main FAQ, the ODF Cornea FAQ and the SATCS Red File instead, and
+  no source uses the phrase "perfect body". See
+  [T47 findings §1](wayfinder/research/T47-living-donor-and-eligibility-findings.md).
 - **CCSSA/SAJCC determination-of-death guideline is due for review.**
   The guideline sets a 5-year review cycle, making a review due in
   **2026**; no published replacement was found as of the Sept 2026
