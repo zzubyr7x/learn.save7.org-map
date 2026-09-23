@@ -7,7 +7,8 @@ Glossary for the wayfinder map behind Save7's organ donation education platform,
 ### Curriculum & Assessment
 
 **Course**
-The whole learn.save7.org program, all three Levels combined. Singular, capital-C when referring to the whole thing.
+The whole learn.save7.org program, all three Levels combined, named **Save7 Learn**. The site and the Course share that one name. Singular, capital-C when referring to the whole thing.
+_Avoid_: Transplant Alchemy 101 (the prior build's name; it survives only as the title of Save7's Study Guide in the Source Corpus)
 
 **Level**
 One of the three depth-based tiers of the Course: Beginner, Intermediate, Advanced (see below). Not "course" — "course" is reserved for the whole program to avoid the ambiguity in early discussion ("one of the courses" meant one Level).
