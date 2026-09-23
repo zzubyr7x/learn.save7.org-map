@@ -49,7 +49,7 @@ An inline flag in the Curriculum Spec marking content drawn from a non-South-Afr
 ### Accounts, Login & Dashboard
 
 **Student**
-The only account type on learn.save7.org; anyone taking the Course. "Volunteer" describes a Student's intent, not a distinct account type — there is no separate volunteer account.
+The only account type on learn.save7.org; anyone taking the Course. "Volunteer" describes a Student's intent, not a distinct account type — there is no separate volunteer account. Always 18 or older, however they arrive: someone who already signs in to Save7 as staff, a volunteer or a stakeholder becomes a Student on the same terms as a member of the public, and there is no under-18 path.
 _Avoid_: Volunteer, Learner, User
 
 **Admin**
