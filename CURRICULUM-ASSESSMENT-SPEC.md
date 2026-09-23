@@ -36,8 +36,11 @@ by passing every Stage Quiz in that Level (see [Assessment Blueprint](#assessmen
 
 ### Stage 1 — Why Donation Matters (The Need)
 
-- Scale of impact: one donor saves 7+ lives via organs, transforms 65+ via
-  tissue donation
+- Scale of impact: one donor saves 7+ lives via organs, transforms 50 via
+  tissue donation. ⚠️ **Corrected 2026-09-22 (#33).** This spec previously
+  read "65+"; that figure could not be sourced, and the prior build had
+  already removed it in favour of fifty. Do not reinstate "65+" without a
+  citation.
 - The real people behind the need: end-stage organ failure, advanced lung
   disease, burn victims, corneal blindness
 - SA shortage severity: donation rate fell 1.60 → 0.48 per million
@@ -52,7 +55,7 @@ by passing every Stage Quiz in that Level (see [Assessment Blueprint](#assessmen
 
 1. Registered donors get less effort from doctors — false, teams legally separate
 2. Donation disfigures the body — false, appearance preserved, open-casket possible
-3. Family gets billed — false, no cost by law
+3. Family gets billed — false in practice: the ODF and the tissue banks do not bill the family. ⚠️ **Corrected 2026-09-22 (#33)** from "no cost by law" — neither the National Health Act nor its regulations allocate donation costs, and the prior build had already removed that exact claim once. Teach this as settled practice, not as statute.
 4. Organs are bought/sold — false, voluntary, trading illegal
 5. Religion forbids donation — most religions support it (SA faith-specific breakdown deferred — see [Open Items](#open-items))
 6. Too old/unhealthy/wears glasses — no strict age limit, case-by-case assessment
@@ -69,8 +72,10 @@ by passing every Stage Quiz in that Level (see [Assessment Blueprint](#assessmen
 - Treating team vs. transplant team, legally separate
 - Two independent doctors certify brain death — one with 5+ years'
   experience, neither on the transplant team — using a rigorous,
-  repeatable set of tests, each doctor testing independently; state
-  pathologist for accidental deaths
+  repeatable set of tests, each doctor testing independently; the
+  **Forensic Pathology Service** for unnatural deaths. ⚠️ **Corrected
+  2026-09-22 (#33)** from "state pathologist for accidental deaths" — that
+  office no longer performs the function.
 - DBD vs. DCD, plain-language
 - Free, voluntary; registering *and* telling family both required
 - **Sources:** `The_Journey_of_a_Gift.mp4`, Transplant Alchemy 101
@@ -216,7 +221,7 @@ depth.
 (not full clinicians — deep surgical/clinical papers in the Source Corpus
 are background/citation material, not direct course content).
 
-### Stage A — The Transplant/Donation Coordinator's Role
+### Stage 1 — The Transplant/Donation Coordinator's Role
 
 - TC/SNOD definition; when brought in (before family told, not after)
 - End-to-end duties (screening → planning → conversation →
@@ -226,7 +231,7 @@ are background/citation material, not direct course content).
   (2) describe end-to-end duties across the pathway; (3) identify SATCS
   as governing body.
 
-### Stage B — Having the Donation Conversation
+### Stage 2 — Having the Donation Conversation
 
 - 5-element/8-step framework (plan → separate death from donation →
   collaborative delivery → debrief)
@@ -241,7 +246,7 @@ are background/citation material, not direct course content).
   disagreement; (4) describe the "donor pause" practice; (5) explain why
   decision delay doesn't predict lower consent.
 
-### Stage C — Consent and End-of-Life Ethics, In Depth
+### Stage 3 — Consent and End-of-Life Ethics, In Depth
 
 - HPCSA informed-consent framework (capacity, surrogates)
 - Advance directives / "best interests" test
@@ -252,7 +257,7 @@ are background/citation material, not direct course content).
   interests" test; (3) connect NHA Ch.8 to the practical consent
   conversation.
 
-### Stage D — Public Advocacy: Equity, Media, and Community Trust
+### Stage 4 — Public Advocacy: Equity, Media, and Community Trust
 
 - Equity/cultural-sensitivity obligations (no community excluded)
 - Donor-family privacy/media protocol
@@ -452,7 +457,7 @@ handoff, but they're real gaps worth tracking:
   content is drafted — that content now rests on it directly rather
   than in a single summary bullet.
 - **Deeper ODF/SATS advocacy-toolkit outreach** for Advanced Level's
-  Stage D, if lesson-content drafting later wants more than the ULUNTU
+  Stage 4, if lesson-content drafting later wants more than the ULUNTU
   case-study framing this spec settled for.
 - **CPD/HPCSA accreditation** for Advanced Level healthcare-provider
   content — ruled **out of scope** for this effort (an institutional/
