@@ -122,10 +122,15 @@ is reused (already covered via the video and the Channel Africa quote).
   - **Circulatory-death determination:** five minutes of continuously
     absent circulation and breathing, then confirmation of absent
     pupillary and motor response. **Why the wait exists:** a stopped
-    heart can, very rarely, restart on its own in the first minutes;
-    past five continuous minutes it does not. Without the reason, the
-    five minutes reads as arbitrary — or as a countdown run for the
-    transplant team's benefit.
+    heart can, very rarely, restart on its own in the first minutes, so
+    the guideline sets five continuous minutes as the period that
+    establishes the arrest is irreversible, and restarts the count if
+    circulation or breathing returns at any point. Without the reason,
+    the five minutes reads as arbitrary — or as a countdown run for the
+    transplant team's benefit. (Wording aligned to the guideline's own
+    framing in [T48](wayfinder/research/T48-intermediate-sources-findings.md) §2;
+    it does not say in terms that a heart never restarts after five
+    minutes.)
   - One cross-referencing sentence that in DCD the clock starts only
     after a decision to withdraw treatment made independently, for the
     patient's own reasons — full decoupling is taught in Stages 2 and 4,
@@ -179,9 +184,16 @@ is reused (already covered via the video and the Channel Africa quote).
 - Certification-of-death legal requirements (two doctors, independence
   from transplant team, HPCSA registration)
 - No cost to the donor's family/estate; prohibition on organ trade
-- Recent developments: 2024–2025 regulatory and governance updates
-  (Ministerial Advisory Committee; regulation amendments, most recently
-  28 Feb 2025)
+- Recent developments: the Ministerial Advisory Committee on Organ
+  Transplantation (GN 5360, 4 October 2024), and the draft Regulations
+  on Organ Transplantation (GN 7879, 4 September 2026 — published for
+  comment, **not in force**). *Corrected by #48:* this bullet previously
+  named "regulation amendments, most recently 28 Feb 2025". That was a
+  misattribution — Notice 6055 of GG 52388 is a National Treasury PFMA
+  notice of 28 March 2025, and the 2025 Health amendment it was confused
+  with (GN 6064, 27 March 2025) changed the notifiable-medical-conditions
+  regulations. No 2025 amendment concerns donation. See
+  [T48](wayfinder/research/T48-intermediate-sources-findings.md) §1.
 - **Learning objective:** State what South African law (NHA 61/2003 Ch.8)
   actually requires and prohibits around organ/tissue donation, including
   recent regulatory developments.
@@ -458,7 +470,17 @@ handoff, but they're real gaps worth tracking:
   **2026**; no published replacement was found as of the Sept 2026
   research pass. Re-check before Intermediate Stage 1's determination
   content is drafted — that content now rests on it directly rather
-  than in a single summary bullet.
+  than in a single summary bullet. **Re-checked 2026-09-24 (#48):** a
+  web search still found no revised or replacement guideline, and Stage 1
+  was drafted against the 2021 text; the CCSSA's own guidelines page
+  could not be loaded, so the check is incomplete and the item stays
+  open ([T48](wayfinder/research/T48-intermediate-sources-findings.md) §2).
+- **Draft Regulations on Organ Transplantation (GN 7879, 4 September
+  2026)** close for comment around early December 2026. If promulgated,
+  revisit Intermediate Stage 3's "recent developments", Stage 1's
+  no-legal-duty-to-refer sentence (draft reg 3(4) would create one), and
+  Beginner Stage 2's living-donor wording (T47). See
+  [T48](wayfinder/research/T48-intermediate-sources-findings.md) §1.3.
 - **Deeper ODF/SATS advocacy-toolkit outreach** for Advanced Level's
   Stage 4, if lesson-content drafting later wants more than the ULUNTU
   case-study framing this spec settled for.
