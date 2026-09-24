@@ -241,12 +241,20 @@ are background/citation material, not direct course content).
 - SATCS as professional body
 - **Objectives:** (1) define role, explain early-engagement timing;
   (2) describe end-to-end duties across the pathway; (3) identify SATCS
-  as governing body.
+  as the coordinators' professional body. ⚠️ **Corrected 2026-09-24
+  (#49)** from "governing body". SATCS is a voluntary special interest
+  group of SATS, and it registers and disciplines nobody; the statutory
+  regulator for nurses is the South African Nursing Council.
 
 ### Stage 2 — Having the Donation Conversation
 
 - 5-element/8-step framework (plan → separate death from donation →
-  collaborative delivery → debrief)
+  collaborative delivery → debrief). **Decided 2026-09-24 (#49):** the
+  eight steps are taught as Wits FACTS's own, cited to the Red File's
+  excerpt of the Wits Transplant Procurement Handbook. The prior build had
+  removed them as unverifiable because it could not obtain the Red File,
+  which is now in the Source Corpus. 📌 The five elements are the
+  Australian guideline's.
 - Wits FACTS script Do's/Don'ts
 - Troubleshooting (machine-switch-off misconception, family disagreement)
 - The "donor pause"; patience with slower-deciding families
