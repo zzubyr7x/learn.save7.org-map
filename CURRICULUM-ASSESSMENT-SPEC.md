@@ -305,9 +305,20 @@ so it contributes nothing here.
 Cross-Level diagnostic, **not** a Stage Quiz.
 
 - Purely diagnostic — **no pass/fail** at any sitting. Its value is the
-  before/after comparison across sittings, not gating anything.
+  before/after comparison across sittings, and **no score gates
+  anything**.
+- **Sitting 1 gates Stage content.** A learner reaches the Level and Stage
+  pages only once their first sitting is submitted, because a "before"
+  taken after reading a Stage is not a before. This gates on *taking* it,
+  never on the result. Sittings 2–4 are offered and never required; none
+  affects a Certificate.
 - **4 fixed sittings** per learner: initial (at signup), post-Beginner,
-  post-Intermediate, post-Advanced.
+  post-Intermediate, post-Advanced. A learner may start at any Level, so
+  each later sitting is offered after the **next Level completed**, and
+  one is owed per Level completed since the last sitting. A sitting
+  skipped before another Level is finished is not owed twice (the same
+  paper back to back measures nothing), so a learner can end with fewer
+  than four.
 - **20 questions**, fixed-form, reused verbatim every sitting (not
   randomized) so results stay comparable over time.
 - **Topic weighting** across the 11 Stages, deliberately Beginner-heavy
@@ -328,6 +339,9 @@ Cross-Level diagnostic, **not** a Stage Quiz.
 - **Format:** 4-option single-best-answer MCQ, no "not sure" option.
 - **Reporting:** score-by-Level breakdown (3 numbers) + overall score,
   with a trend view across prior sittings once more than one exists.
+  **No answer review** after a sitting, unlike a Stage Quiz: the same
+  questions come back at every sitting, so showing the key after the
+  first would turn the later sittings into a memory test.
 
 ### Stage Quiz
 
